@@ -1,0 +1,177 @@
+body, .container {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  order: -1;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #A1E0FF;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  text-align: center;
+}
+
+.intro h2 {
+  color: white;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  /* cursor: auto; */
+}
+
+/* a:link:active, a:visited:active {
+  color: white;
+} */
+
+.container {
+  text-align: center;
+  background-color: #A1E0FF;
+}
+
+img {
+  max-width: 90%;
+  margin: 2%;
+}
+
+hr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+header {
+  text-align: center;
+  color: #4d5052;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.item {
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 16px 15px 13.5px 19px;
+  border-radius: 25px;
+  background-color: #7E81FF;
+}
+
+main {
+  padding: 30px;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.projectLink {
+  margin: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact {
+  margin-left: 2%;
+  margin-right: 2%;
+  border: none;
+  margin-top: 3%;
+}
+
+aside {
+  background-color: #4d5052;
+}
+
+.projects {
+  justify-content: center;
+  align-items: baseline;
+}
+
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+  }
+
+  main {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+  }
+
+  .projects {
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .links {
+    flex-direction: column;
+
+  }
+
+  img {
+    margin-bottom: 3%;
+  }
+
+  nav, aside {
+    flex: 0 0 12em;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+  .intro {
+    background: url("./images/mark.jpg") no-repeat top center/cover;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 3%;
+  }
+}
