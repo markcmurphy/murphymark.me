@@ -1,116 +1,289 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAsEwOAOByLQD3jEgAx14cALhTFADedTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMwAAADMzMzIiAAAAIiMzNiEAMwASIzMyQQMzMBQjMzRRMzMzFUMzNBMzMzMxQzMxMzMzMzMTMzMzMzMzMzMzMzMzADMzMzMzMzAAAzMzMzMzAAAAMzMwAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAAH4AAAB+AAAAZgAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAGAAAADwAAAB+AAAP//AAD//wAA"
+      rel="icon"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAsEwOAOByLQD3jEgAx14cALhTFADedTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMwAAADMzMzIiAAAAIiMzNiEAMwASIzMyQQMzMBQjMzRRMzMzFUMzNBMzMzMxQzMxMzMzMzMTMzMzMzMzMzMzMzMzADMzMzMzMzAAAzMzMzMzAAAAMzMwAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAAH4AAAB+AAAAZgAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAGAAAADwAAAB+AAAP//AAD//wAA"
-    rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Mark Murphy</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
-  <script src="https://unpkg.com/scrollreveal@4"></script>
-  <script>
-    ScrollReveal({
-      duration: 1000
-    })
-  </script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <script>
-    ScrollReveal({
-      reset: true
-    });
-  </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mark Murphy</title>
 
-  <script>
-    ScrollReveal().reveal('.headline');
-    ScrollReveal().reveal('.tagline', {
-      delay: 500
-    });
-    ScrollReveal().reveal('.punchline', {
-      delay: 2000
-    });
-  </script>
+    <script src="./particles.js" charset="utf-8"></script>
+    <script src="./app.js" defer="defer" charset="utf-8"></script>
+  </head>
 
-  <script src="./particles.js" charset="utf-8"></script>
-  <script src="./app.js" defer="defer" charset="utf-8"></script>
-</head>
+  <body>
+    <nav class="lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Mark Murphy</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/markcmurphy/"
+              target="_blank"
+              title="LinkedIn"
+              ><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/markcmurphy"
+              target="_blank"
+              title="Github"
+              ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1C_CMAyF9cuI5IOf52jAa59wPPdvXFPphKSZATZR_IGE/edit?usp=sharing"
+              target="_blank"
+              ><i
+                class="fa fa-file-text-o fa-2x"
+                aria-hidden="true"
+                title="Resume"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mark@murphymark.me"
+              target="_blank"
+              title="Email"
+            >
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
 
-<!-- <header>
-  <div class="row">
-    <div class="col-sm">
-      <div class="introHeader">
-        <h1>I can also make a header</h1>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br />
+        <div class="row">
+          <div class="col s12 m9">
+            <h1 class="header">
+              Hi, I'm Mark. <br />
+
+              I like to build internet things.
+            </h1>
+          </div>
+
+          <div class="col s12 m3">
+            <div class="row center">
+              <img class="avatar" src="./images/mark.jpg" alt="" />
+            </div>
+
+            <br /><br />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</header> -->
 
-
-
-<body class="grail container-fluid">
-  <div id="particles-js"></div>
-  <div class="body">
-    <main class="main ">
-
-      <!-- <div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-      </div> -->
-
-      <div class="intro">
-        <!-- <div class="overlay"></div> -->
+    <div class="container">
+      <div class="section">
+        <!-- Icon Section  
         <div class="row">
-          <div class="col-sm">
-            <div class="introHeader">
-              <h1>I love to build internet things</h1>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">flash_on</i>
+              </h2>
+              <h5 class="center">Speeds up development</h5>
+
+              <p class="light">
+                We did most of the heavy lifting for you to provide a default
+                stylings that incorporate our custom components. Additionally,
+                we refined animations and transitions to provide a smoother
+                experience for developers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">User Experience Focused</h5>
+
+              <p class="light">
+                By utilizing elements and principles of Material Design, we were
+                able to create a framework that incorporates components and
+                animations that provide more feedback to users. Additionally, a
+                single underlying responsive system across all platforms allow
+                for a more unified user experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center">SwatchTones</h5>
+
+              <p class="light">
+                SwatchTones is a MEAN full-stack application that allows users
+                to search for and upload cosmetics samples that represent a
+                diversity of skin tones, allowing for more informed online
+                purchasing decisions. The app integrates with several NPM
+                modules that extract prominant colors from uploaded images,
+                attempts to discern makeup from skin tone, and displays that
+                array of colors.
+              </p>
+
+              <p>
+                <b>
+                  <i class="fab fa-html5 fa-2x"></i>
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                  <i class="fab fa-js fa-2x"></i>
+                  <i class="fab fa-angular fa-2x"></i>
+                  <i class="fab fa-node-js fa-2x"></i>
+                  <img class="icon" src="./images/mongodb_1014604.png" alt="" />
+                  <img class="icon" src="./images/pic_logo.svg" alt="" />
+                </b>
+              </p>
+              <div class="projectLinks">
+                <a
+                  class="projectLink"
+                  href="https://github.com/markcmurphy/swatchtones"
+                  ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                  GitHub</a
+                >
+                <a class="projectLink" href="https://makeuplooks.herokuapp.com/"
+                  ><i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i
+                  ><br />
+                  Live site</a
+                >
+              </div>
+              <img src="https://i.imgur.com/7n2EIME.gif" alt="" />
             </div>
           </div>
         </div>
+      </div> -->
 
-        <div class="row">
-          <div class="col-sm">
-            <img class="avatar" src="./images/mark.jpg" alt="">
-          </div>
-        </div>
-      </div>
+        <div class="projects">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="item z-depth-2">
+                <a
+                  href="https://markcmurphy.github.io/texas-county-covid-19"
+                  target="_blank"
+                >
+                  <h4>
+                    Covid-19 Chloropleth Map <br />
+                    by Texas County
+                  </h4>
+                </a>
+                <p>
+                  This app displays a chloropleth map of Covid-19 cases by Texas
+                  county. The backend uses Cheerio to scrape the Texas Dept.
+                  State Health Services' website for statistics that are then
+                  served up by an Express API. The front-end is built with
+                  Gatsby.js to display those stats on the chloropleth map
+                  generated using D3.js.
+                </p>
 
-      <div class="about">
-        <h2>About Me</h2>
-        <div class="row">
-          <div class="col-sm">
-            <p> I am happiest when given a problem and the opportunity to solve it. Whether that is working through miscommunications with others, taking apart broken home appliances before giving up on them, or building a full-stack web
-              application.
-              That moment
-              when something clicks and you know you can make it work is beautiful.</p>
-            <hr>
-          </div>
-        </div>
-      </div>
+                <p>
+                  Texas Covid-19 cases by county were initially scraped from
+                  <a
+                    href="https://www.dshs.texas.gov/news/updates.shtm"
+                    target="_blank"
+                    >Texas Dept. State Health Services</a
+                  >. On March 22, 2020, DSHS released their own map of Covid-19
+                  cases and stopped displaying the chart my info was being
+                  scraped from. As a result, Cheerio now scrapes the
+                  <a
+                    href="https://web.archive.org/web/20200322105233/https://www.dshs.texas.gov/news/updates.shtm"
+                    target="_blank"
+                  >
+                    Web Archive version</a
+                  >
 
-      <!-- <h1 class="headline">
-        Why did I add this effect?
-      </h1>
-      <p class="tagline">
-        Because
-        <span class="punchline">I can.</span>
-      </p> -->
+                  to demonstrate how the app initially functioned. The
+                  information is out of date and won't be updated beyond March
+                  22.
+                </p>
 
+                <p><b>HTML, CSS, React, Gatsby.js, D3.js, Express</b></p>
+                <div class="projectLinks">
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/texas-county-covid-19"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub <br />Front End</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/texas-county-covid-19-api"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub <br />Back End</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://markcmurphy.github.io/texas-county-covid-19/"
+                    ><i
+                      class="fa fa-window-maximize fa-2x"
+                      aria-hidden="true"
+                    ></i
+                    ><br />
+                    Live site</a
+                  >
+                </div>
+                <!-- <img src="https://i.imgur.com/ZnJpoRj.gif" alt="" /> -->
+              </div>
+            </div>
 
-      <div class="projects">
-        <div class="row">
-          <div class="col-sm">
-            <h1>Projects</h1>
-            <div class="item">
-              <a href="https://makeuplooks.herokuapp.com/" target="_blank">
-                <h2>SwatchTones</h2>
-              </a>
-              <p>SwatchTones is a MEAN full-stack application that allows users to search for and upload cosmetics samples that represent a diversity of skin tones, allowing for more informed online purchasing decisions. The app integrates with
-                several
-                NPM modules
-                that extract prominant colors from uploaded images, attempts to discern makeup from skin tone, and displays that array of colors.
+            <div class="col s12 m6">
+              <div class="item z-depth-2">
+                <a href="https://makeuplooks.herokuapp.com/" target="_blank">
+                  <h4>SwatchTones</h4>
+                </a>
+                <p>
+                  SwatchTones is a MEAN full-stack application that allows users
+                  to search for and upload cosmetics samples that represent a
+                  diversity of skin tones, allowing for more informed online
+                  purchasing decisions. The app integrates with several NPM
+                  modules that extract prominant colors from uploaded images,
+                  attempts to discern makeup from skin tone, and displays that
+                  array of colors.
+                </p>
+
                 <p>
                   <b>
                     <i class="fab fa-html5 fa-2x"></i>
@@ -118,172 +291,259 @@
                     <i class="fab fa-js fa-2x"></i>
                     <i class="fab fa-angular fa-2x"></i>
                     <i class="fab fa-node-js fa-2x"></i>
-                    <img class="icon" src="./images/mongodb_1014604.png" alt="">
-                    <img class="icon" src="./images/pic_logo.svg" alt="">
+                    <img
+                      class="icon"
+                      src="./images/mongodb_1014604.png"
+                      alt=""
+                    />
+                    <img class="icon" src="./images/pic_logo.svg" alt="" />
                   </b>
                 </p>
                 <div class="projectLinks">
-                  <a class="projectLink" href="https://github.com/markcmurphy/swatchtones"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>
-                    GitHub</a>
-                  <a class="projectLink" href="https://makeuplooks.herokuapp.com/"><i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i><br>
-                    Live site</a>
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/swatchtones"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://makeuplooks.herokuapp.com/"
+                    ><i
+                      class="fa fa-window-maximize fa-2x"
+                      aria-hidden="true"
+                    ></i
+                    ><br />
+                    Live site</a
+                  >
                 </div>
-                <img src="https://i.imgur.com/7n2EIME.gif" alt="">
+                <img src="https://i.imgur.com/7n2EIME.gif" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="item z-depth-2">
+                <a
+                  href="https://disaster-app-frontend.herokuapp.com/"
+                  target="_blank"
+                >
+                  <h4>
+                    Disaster <br />
+                    App
+                  </h4>
+                </a>
+                <p>
+                  This application was designed for mobile use, allowing users
+                  in a disaster zone to either offer assistance or request
+                  assistance from neighbors and community members in the event
+                  emergency services are overextended. The Ruby application is
+                  built on a Rails backend that serves a JSON API with all CRUD
+                  operations available across models and CORS configuration. The
+                  front-end uses Angular and features the Google Maps API for
+                  geolocation.
+                </p>
+
+                <p><b>HTML, CSS, Ruby on Rails, AngularJS, PostgreSQL</b></p>
+                <div class="projectLinks">
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/disaster-frontend"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub <br />Front End</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/disaster-backend"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub <br />Back End</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://disaster-app-frontend.herokuapp.com/"
+                    ><i
+                      class="fa fa-window-maximize fa-2x"
+                      aria-hidden="true"
+                    ></i
+                    ><br />
+                    Live site</a
+                  >
+                </div>
+                <img src="https://i.imgur.com/ZnJpoRj.gif" alt="" />
+              </div>
             </div>
 
-            <div class="item">
-              <a href="https://disaster-app-frontend.herokuapp.com/" target="_blank">
-                <h2>Disaster <br> App</h2>
-              </a>
-              <p>This application was designed for mobile use, allowing users in a disaster zone to either offer assistance or request assistance from neighbors and community members in the event emergency services are overextended. The Ruby
-                application
-                is built
-                on a Rails backend that serves a JSON API with all CRUD operations available across models and CORS configuration. The front-end uses Angular and features the Google Maps API for geolocation.</p>
+            <div class="col s12 m6">
+              <div class="item z-depth-2">
+                <a href="https://infinite-ridge.herokuapp.com/" target="_blank">
+                  <h4>
+                    Hiking <br />
+                    Weather
+                  </h4>
+                </a>
+                <p>
+                  Hiking Weather is a full-stack application using Mongo,
+                  Express, Angular.js, and Node.js [MEAN]. The application
+                  allows a user to enter in the dates and location for a hiking
+                  trip and then receive recommendations for clothing, water
+                  consumption, and other advisories based on the OpenWeatherMap
+                  API.
+                </p>
 
-              <p><b>HTML, CSS, Ruby, Rails, Angular, PostgreSQL</b></p>
-              <div class="projectLinks">
-                <a class="projectLink" href="https://github.com/markcmurphy/disaster-frontend"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>
-                  GitHub <br>Front End</a>
-                <a class="projectLink" href="https://github.com/markcmurphy/disaster-backend"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>
-                  GitHub <br>Back End</a>
-                <a class="projectLink" href="https://disaster-app-frontend.herokuapp.com/"><i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i><br>
-                  Live site</a>
+                <p>
+                  <b>
+                    HTML, CSS, Bootstrap, JavaScript, Mongo, Express,
+                    Angular.js, Node.js
+                  </b>
+                </p>
+                <div class="projectLinks">
+                  <a
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/project_3"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://infinite-ridge.herokuapp.com/"
+                    ><i
+                      class="fa fa-window-maximize fa-2x"
+                      aria-hidden="true"
+                    ></i
+                    ><br />
+                    Live site</a
+                  >
+                </div>
+                <img src="https://i.imgur.com/m22Bav2.gif" alt="" />
               </div>
-              <img src="https://i.imgur.com/ZnJpoRj.gif" alt="">
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="item z-depth-2">
+                <a
+                  target="_blank"
+                  href="https://enigmatic-shelf-66483.herokuapp.com/"
+                  target="_blank"
+                >
+                  <h4>
+                    Blockchain <br />
+                    Jobs
+                  </h4>
+                </a>
+                <p>
+                  Blockchain Jobs is an online job board dedicated to blockchain
+                  related roles in the tech industry. This full-stack
+                  application adheres to the MVC file structure and uses
+                  Node.js, MongoDB, Mongoose, Express and EJS. There are three
+                  models (employers, jobs, users), complete RESTful routes, user
+                  authentication with password encryption, and Google Maps
+                  integration (particularly challenging using only EJS).
+                </p>
 
-
+                <p>
+                  <b
+                    >HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, MongoDB,
+                    Mongoose, Express, EJS</b
+                  >
+                </p>
+                <div class="projectLinks">
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/Project2_Full_Stack_App"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://enigmatic-shelf-66483.herokuapp.com/"
+                    ><i
+                      class="fa fa-window-maximize fa-2x"
+                      aria-hidden="true"
+                    ></i
+                    ><br />
+                    Live site</a
+                  >
+                </div>
+                <img src="https://i.imgur.com/ArgROrG.gif" alt="" />
+              </div>
             </div>
 
-            <div class="item">
-              <a href="https://infinite-ridge.herokuapp.com/" target="_blank">
-                <h2>Hiking <br> Weather</h2>
-              </a>
-              <p>Hiking Weather is a full-stack application using Mongo, Express, Angular.js, and Node.js [MEAN]. The application allows a user to enter in the dates and location for a hiking trip and then receive recommendations for
-                clothing,
-                water
-                consumption,
-                and other advisories based on the OpenWeatherMap API. </p>
+            <div class="col s12 m6">
+              <div class="item z-depth-2">
+                <a
+                  href="https://markcmurphy.github.io/index.html"
+                  target="_blank"
+                >
+                  <h4>JavaScrolls</h4>
+                </a>
+                <p>
+                  JavaScrolls is a simple javascript turn-based card game in a
+                  similar style to Hearthstone, in which a player and the
+                  console play/attack with "creature" cards until the opponent
+                  has no points remaining.
+                </p>
 
-              <p><b>
-                  HTML, CSS, Bootstrap, JavaScript, Mongo, Express, Angular.js, Node.js
-                </b></p>
-              <div class="projectLinks">
-                <a class="projectLink" href="https://github.com/markcmurphy/project_3"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>
-                  GitHub</a>
-                <a class="projectLink" href="https://infinite-ridge.herokuapp.com/"><i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i><br>
-                  Live site</a>
+                <p><b>HTML, CSS, JavaScript, jQuery</b></p>
+                <div class="projectLinks">
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://github.com/markcmurphy/markcmurphy.github.io"
+                    ><i class="fa fa-github fa-2x" aria-hidden="true"></i><br />
+                    GitHub</a
+                  >
+                  <a
+                    target="_blank"
+                    class="projectLink"
+                    href="https://markcmurphy.github.io/index.html"
+                    ><i
+                      class="fa fa-window-maximize fa-2x"
+                      aria-hidden="true"
+                    ></i
+                    ><br />
+                    Live site</a
+                  >
+                </div>
+                <img src="https://i.imgur.com/nsx0VjM.gif" alt="" />
               </div>
-              <img src="https://i.imgur.com/m22Bav2.gif" alt="">
-
-
-
-            </div>
-
-            <div class="item">
-              <a href="https://enigmatic-shelf-66483.herokuapp.com/" target="_blank">
-                <h2>Blockchain <br> Jobs</h2>
-              </a>
-              <p>Blockchain Jobs is an online job board dedicated to blockchain related roles in the tech industry. This full-stack application adheres to the MVC file structure and uses Node.js, MongoDB, Mongoose, Express and EJS. There
-                are
-                three models
-                (employers,
-                jobs, users), complete RESTful routes, user authentication with password encryption, and Google Maps integration (particularly challenging using only EJS).</p>
-
-              <p><b>HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, MongoDB, Mongoose, Express, EJS</b></p>
-              <div class="projectLinks">
-                <a class="projectLink" href="https://github.com/markcmurphy/Project2_Full_Stack_App"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>
-                  GitHub</a>
-                <a class="projectLink" href="https://enigmatic-shelf-66483.herokuapp.com/"><i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i><br>
-                  Live site</a>
-              </div>
-              <img src="https://i.imgur.com/ArgROrG.gif" alt="">
-
-
-
-            </div>
-
-            <div class="item">
-              <a href="https://markcmurphy.github.io/index.html" target="_blank">
-                <h2>JavaScrolls</h2>
-              </a>
-              <p>JavaScrolls is a simple javascript turn-based card game in a similar style to Hearthstone, in which a player and the console play/attack with "creature" cards until the opponent has no points remaining.</p>
-
-              <p><b>HTML, CSS, JavaScript, jQuery</b></p>
-              <div class="projectLinks">
-                <a class="projectLink" href="https://github.com/markcmurphy/markcmurphy.github.io"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>
-                  GitHub</a>
-                <a class="projectLink" href="https://markcmurphy.github.io/index.html"><i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i><br>
-                  Live site</a>
-              </div>
-              <img src="https://i.imgur.com/nsx0VjM.gif" alt="">
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <div id="particles-js"></div>
 
-    <nav>
-      <div class="navName">
-        <h1>Mark Murphy</h1>
-      </div>
-      <div class="colorBehindNav">
-        <h4>Full Stack Web Developer</h4>
-      </div>
-      <!-- <hr> -->
-    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  </body>
 
-    <aside>
-      <div class="links">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/markcmurphy/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/markcmurphy" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://docs.google.com/document/d/1C_CMAyF9cuI5IOf52jAa59wPPdvXFPphKSZATZR_IGE/edit?usp=sharing" target="_blank"><i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mark@murphymark.me" target="_blank"> <i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-    </aside>
+  <scripts>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- end of "container" -->
-  </div>
+    <script src="https://use.fontawesome.com/46cf3dff55.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-96453296-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-</body>
-
-<!--scripts load last for faster loading times  -->
-<scripts>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/46cf3dff55.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96453296-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-96453296-1');
-  </script>
-
-
-  <script>
-    ScrollReveal().reveal('.headline')
-    ScrollReveal().reveal('.tagline', {
-      delay: 500
-    })
-    ScrollReveal().reveal('.punchline', {
-      delay: 2000
-    })
-  </script>
-
-</scripts>
-
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-96453296-1");
+    </script>
+  </scripts>
 </html>

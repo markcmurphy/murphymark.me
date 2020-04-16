@@ -1,59 +1,52 @@
 /* mobile first */
-.grail, .body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Roboto Slab', serif;
-  font-family: 'Roboto', sans-serif;
-  background-color: #4B586B;
-  /* overflow-x: hidden; */
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #cfc9cd;
 }
 
-
-
 hr {
-  background-color: #ED7225;
+  background-color: #ed7225;
 }
 
 nav {
-  order: -1;
-  text-align: center;
-  background-color: #6C7B8E;
-  color: #4B586B;
-  z-index: 1 ;
+  background-color: #4b586b;
+}
+
+.btn-large {
+  background-color: #ed7225;
 }
 
 header {
-  z-index: 1 ;
-
+  z-index: 1;
 }
 
 nav h1 {
-  color: #CFC9CD;
+  color: #cfc9cd;
 }
 
 .colorBehindNav {
-  background-color: #CFC9CD;
+  background-color: #cfc9cd;
   border-style: solid;
-  border-color: #4B586B;
+  border-color: #4b586b;
   padding: 5%;
   border-width: 3px;
 }
 
 .navName {
-  background-color: #ED7225;
+  background-color: #ed7225;
   border-style: solid;
-  border-color: #4B586B;
+  border-color: #4b586b;
   border-width: 3px;
 }
 
 .introHeader {
-  background-color: #CFC9CD;
+  background-color: #cfc9cd;
   border-style: solid;
-  border-color: #4B586B;
+  border-color: #4b586b;
   padding: 1%;
-  /* border-width: 3px; */
 }
 
 .navName h1 {
@@ -67,60 +60,22 @@ h1 {
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
-  text-align: center;
 }
 
-/* .intro h2 {
-  color: white;
-} */
 p {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-a:link, a:visited {
-  color: white;
-  text-decoration: none;
-  /* cursor: auto; */
-}
-
-/* a:link:active, a:visited:active {
-  color: white;
-} */
 .icon {
   height: 28px;
   width: 34px;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
-
-ul a {
-  display: block;
-  padding: 0.25em 1em;
-  text-decoration: none;
-  text-align: center;
-  margin: 3%;
-}
-
 .container-fluid {
-  text-align: center;
-  background-color: #4B586B;
+  background-color: #4b586b;
   padding-left: 0;
   padding-right: 0;
-}
-
-.container {
-  text-align: center;
-  background-color: #4B586B;
 }
 
 img {
@@ -137,18 +92,21 @@ img {
   margin-top: 3%;
 }
 
-.intro {
-  text-align: center;
-  color: #ED7225;
-  /* background-color: lavender; */
+.header {
+  color: #4b586b;
 }
 
-.about h2{
-  color: #ED7225;
+.intro {
+  text-align: center;
+  color: #ed7225;
+}
+
+.about h2 {
+  color: #ed7225;
 }
 
 .about {
-  color: #CFC9CD;
+  color: #cfc9cd;
 }
 
 hr {
@@ -163,30 +121,20 @@ hr {
   width: auto;
   margin-top: 5%;
   margin-bottom: 5%;
-  /* margin-left: 10%; */
-  /* margin-right: 10%; */
+  /* margin-left: 10%;
+  margin-right: 10%; */
   padding: 16px 15px 13.5px 19px;
   border-radius: 25px;
-  background-color: #CFC9CD;
-  color: #4B586B;
+  background-color: #e6e6e6;
+  color: #4b586b;
 }
 
 .projects h1 {
-  color: #ED7225;
+  color: #ed7225;
 }
 
-.projects h2 {
-  /* display: inline; */
-  color: #ED7225;
-  /* border-bottom-style: solid; */
-  /* border-color: #4B586B; */
-  /* border-width: 3px; */
-  /* margin-bottom: 3%; */
-}
-
-main {
-  padding: 30px;
-  /* background-color: lavender; */
+.projects h4 {
+  color: #ed7225;
 }
 
 .projectLinks {
@@ -208,70 +156,32 @@ main {
   text-align: center;
 }
 
-/* .contact {
-  margin-left: 2%;
-  margin-right: 2%;
-  border: none;
-  margin-top: 3%;
-} */
-
-aside {
-  background-color: #6C7B8E;
-  position: sticky;
-  top: 0;
-  z-index: 1 ;
-}
-
-aside i {
-  color: #4B586B;
-}
-
 .projects {
   justify-content: center;
   align-items: baseline;
   padding-left: 5%;
   padding-right: 5%;
 }
+.projectLink i {
+  color: #4b586b;
+}
 
+.projectLinks a {
+  color: #4b586b;
+}
 
 #particles-js {
-  position: absolute;
-  background-color: #4B586B;
-  /* background-color: rgba(0, 0, 0, 1); */
-  /* background: lightgreen; */
-  background-image: url("");
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  background-position: 50% 50%;
-  /* background-position: center; */
-  z-index: 0 ;
-
-}
-
-#particles-js canvas{
-     position: fixed;
-     /* top: 50px; */
-     left: 0;
-     width: 100%;
-     min-height: 100vh;
-
-     /* height: 100%; */
-     /* bottom: 0; */
-     /* right: 0; */
-     /* overflow: auto; */
-}
-
-/* #particles-js {
-  position: absolute;
+  position: fixed;
+  left: 0;
   width: 100%;
-  height: 100%;
-background-color: red;
-left: 0;
-top: 0;
-} */
+  min-height: 100vh;
 
-
-
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 
 /* laptops and larger */
 @media (min-width: 768px) {
@@ -279,20 +189,13 @@ top: 0;
     flex-direction: row;
     flex: 1;
     justify-content: center;
-    /* background-color: green; */
   }
 
   .main {
     flex: 1;
-    text-align: center;
     align-items: center;
-    /* padding: 10%; */
     border-radius: 25px;
     justify-content: center;
-  }
-
-  nav, aside {
-    flex: 0 0 12em;
   }
 
   .links {
@@ -300,20 +203,11 @@ top: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    /* margin-top: 10%; */
     min-height: 100vh;
-    /* margin-top: 35px; */
   }
 
   .navName {
-    margin-top:10%;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: none;
+    margin-top: 10%;
   }
 
   .projects {
@@ -326,23 +220,27 @@ top: 0;
     margin-bottom: 3%;
   }
 
-  h1, p {
-    text-align: center;
+  nav a {
+    height: 64px;
   }
 
-  /* .overlay {
-	background-color: rgba(0, 0, 0, 0.4);
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-} */
-  /* .intro {
-    background: url("./images/mark.jpg") no-repeat top center/cover;
-    background-size: auto 100%;
-    position: relative;
-    height: 100vh;
-    margin-bottom: 3%;
-  } */
+  .masonry {
+    column-count: 4;
+    column-gap: 1em;
+  }
+
+  .item {
+    margin: 0 8px 8px 0; /* Some gutter */
+  }
+
+  #index-banner {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
 }
